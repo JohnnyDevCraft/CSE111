@@ -4,7 +4,7 @@ DISCOUNT_RATE = .1;
 TAX_RATE = .06;
 DISCOUNT_DAYS = ["Wednesday", "Thursday"];
 
-today = datetime.now().strftime("%A");
+today = datetime.now(tz=None).strftime("%A");
 
 if today in DISCOUNT_DAYS:
     print(f"Today is {today}, you get a discount!");
